@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP HTML - Terres Claires</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <div class="site-container header-inner">
+            <img src="img/logo-c.png" class="logo-img" alt="logo terres claires">
+            <p>Des objets du quotidien qui ont du sens.</p>
+            <div class="icon-header">
+                <button type="button" id="menu-search-button">
+                    <img src="img/search.png" alt="search">
+                </button>
+                <button type="button" id="menu-user-button">
+                    <img src="img/user.png" alt="login">
+                </button>
+                <button type="button" id="menu-cart-button">
+                    <img src="img/parcel.png" alt="cart">
+                </button>
+                <button type="button" id="menu-burger-button">
+                    <img src="img/menu.png" class="menu-open" alt="menu burger">
+                    <img src="img/cross-button.png" class="menu-close is-hidden" alt="menu close">
+                </button>
+            </div>
+        </div>
+    </header>
+    <nav id="main-nav">
+        <div class="site-container nav-inner">
+            <a href="#" title="Accueil">Accueil</a>
+            <a href="index.html" title="Collections">Collections</a>
+            <a href="#" title="A propos">À propos</a>
+            <a href="#" title="Contact">Contact</a>
+        </div>
+    </nav>
+    <div class="layout-container">
+        <main class="content-area">
+            <section id="product">
+                <img src="img/bol-gres-bleu.webp" alt="image-product" class="img-product">
+                <div class="card-content">
+                    <p class="smallcaps">Nos bols</p>
+                    <h1>Bol en grès bleu</h1>
+                    <h2>35 €</h2>
+                    <p class="product-descrip">Un bol unique, façonné à la main dans notre atelier en France. Idéal pour vos petits-déjeuners, soupes ou plats du quotidien, il allie esthétique et durabilité.</p>
+                    
+                    <div class="add-cart">
+                        <p>Quantité</p>
+                        <div class="add-cart-container">
+                            <div class="qnty-container">
+                                <button type="button" class="qnty-btn minus-js" aria-label="Decrease quantity">-</button>
+                                <input type="number" class="qnty-input" value="1" min="1" max="100" readonly>
+                                <button type="button" class="qnty-btn plus-js" aria-label="Increase quantity">+</button>
+                            </div>
+                            <button type="submit" class="link-button">
+                                <img src="img/parcel.png" class="icon-product" alt="ajouter-panier">
+                                <p>Ajouter au panier</p>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="labels">
+                        <div class="label-product">
+                            <img src="img/france.png" alt="fabrication-fr">
+                            <p>Fabrication française</p>
+                        </div>
+                        <div class="label-product">
+                            <img src="img/compassion.png" alt="piece-faite-main">
+                            <p>Pièce unique faite à la main</p>
+                        </div>
+                        <div class="label-product">
+                            <img src="img/sustanable.png" alt="materiaux-durable">
+                            <p>Matériaux durables</p>
+                        </div>
+                        <div class="label-product">
+                            <img src="img/delivery-truck.png" alt="livraison-offerte">
+                            <p>Livraison offerte dès 60 €</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <aside class="sidebar-area">
+            <img src="img/delivery-truck.png" class="delivery-icon" alt="icon livraison">
+            <div class="aside-text">
+                <p>Livraison offerte dès 60 €</p>
+                <p>En France métropolitaine. Expédition sous 48 h.</p>
+            </div>
+        </aside>
+    </div>
+    <footer>
+        <div class="site-container footer-inner">
+            <div class="footer-nav">
+                <img src="img/logo-c.png" class="footer-img footer-wide" alt="">
+                <img src="img/logo-c-text.png" class="footer-img footer-small" alt="">
+                <ul class="footer-list-nav">
+                    <li>Navigation</li>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="index.html">Collection</a></li>
+                    <li><a href="#">À propos</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <ul class="footer-list-info">
+                    <li>Informations</li>
+                    <li><a href="#">livraison</a></li>
+                    <li><a href="#">Retours</a></li>
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="#">Politique de confidentialité</a></li>
+                </ul>
+                <div class="footer-social">
+                    <p>Suivez-nous</p>
+                    <div class="footer-icons">
+                        <a href="http://" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                            <img src="img/instagram.png" alt="Instagram"></img>
+                        </a>
+                        <a href="http://" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                            <img src="img/facebook.png" alt="Facebook"></img>
+                        </a>
+                        <a href="http://" aria-label="Pinterest" target="_blank" rel="noopener noreferrer">
+                            <img src="img/pinterest.png" alt="Pinterest"></img>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-legal">
+                <p>© 2024 atelier Terre Claires. Tous droits réservés.</p>
+                <p>Des objets du quotidien qui ont du sens.
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script src="script.js"></script>
+    </html>
